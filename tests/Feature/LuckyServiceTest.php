@@ -36,16 +36,78 @@ class LuckyServiceTest extends TestCase
     public static function imFeelingLuckyDataProvide(): array
     {
         return [
-            'winner prize 70%' => [
+            '902 winner prize 70%' => [
                 'randomNumber' => 902, 
                 'isWinner' => true, 
                 'expectedPrize' => 631, 
             ],
-            'winner prize 10%' => [
-                'randomNumber' => 200, 
+
+            '901 loose prize 0' => [
+                'randomNumber' => 901, 
+                'isWinner' => false, 
+                'expectedPrize' => 0, 
+            ],
+
+            '900 winner prize 50%' => [
+                'randomNumber' => 900, 
                 'isWinner' => true, 
-                'expectedPrize' => 20, 
-            ]
+                'expectedPrize' => 450, 
+            ],
+
+            '602 winner prize 50%' => [
+                'randomNumber' => 602, 
+                'isWinner' => true, 
+                'expectedPrize' => 301, 
+            ],
+
+            '601 loose prize 0' => [
+                'randomNumber' => 601, 
+                'isWinner' => false, 
+                'expectedPrize' => 0, 
+            ],
+
+            '600 winner prize 30%' => [
+                'randomNumber' => 600, 
+                'isWinner' => true, 
+                'expectedPrize' => 180, 
+            ],
+
+            '302 winner prize 30%' => [
+                'randomNumber' => 302, 
+                'isWinner' => true, 
+                'expectedPrize' => 91, 
+            ],
+
+            '301 loose prize 0' => [
+                'randomNumber' => 301, 
+                'isWinner' => false, 
+                'expectedPrize' => 0, 
+            ],
+
+            '300 winner prize 10%' => [
+                'randomNumber' => 300, 
+                'isWinner' => true, 
+                'expectedPrize' => 30, 
+            ],
+
+            '209 winner prize 10%' => [
+                'randomNumber' => 209, 
+                'isWinner' => false, 
+                'expectedPrize' => 0, 
+            ],
+
+            '2 winner prize 10%' => [
+                'randomNumber' => 2, 
+                'isWinner' => true, 
+                'expectedPrize' => 0, 
+            ],
+
+            '1 winner prize 10%' => [
+                'randomNumber' => 1, 
+                'isWinner' => false, 
+                'expectedPrize' => 0, 
+            ],
+
         ];
     }
 }

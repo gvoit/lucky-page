@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Collection;
 class LuckyService implements LuckyServiceInterface
 {
     protected static int $historyLimit = 3;
-    protected static int $randomRangeFrom = 0;
+    protected static int $randomRangeFrom = 1;
     protected static int $randomRangeTo = 1000;
 
 
