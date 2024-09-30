@@ -7,7 +7,7 @@
       
         @inertiaHead
         @routes
-        @vite(['resources/js/app.js', "resources/js/pages/{$page['component']}.vue"])
+        @vite(['resources/js/app.js'])
        
     </head>
     <body>
